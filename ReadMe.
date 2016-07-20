@@ -1,0 +1,65 @@
+Please download the dataset here, which contains a sample of anonymized user listening data in Spotify (from the first half of October, 2015). We'd like you to use this data first to do a warm-up exercise, then to perform an open-ended exploration. Please use any tool you're comfortable with, and package the results of your exploration into a document (the document can be a presentation, a pdf, a google doc, an IPython or R notebook -- whatever you like).
+
+We'd like you to use this data to either make some insights into user behavior, suggest some product changes, or a combination. You can do this any way you like (as long as your results are clearly written up and make sense), but here are some suggestions:
+
+Warm-up (please do this first):
+Determine whether male and female listeners are significantly different in their overall listening (in terms of the count of track listens, or in terms of the total time spent listening)
+
+Analysis suggestion 1: 
+Break the user listening into sessions (exactly what is a listening session is up to you to define)
+Look for correlations between user demographic features (or their behavior) and their overall listening, or their average session lengths
+Analysis suggestion 2:
+Find a clustering of user categories that delineates some interesting or useful behavior traits (or show that no clustering makes sense)
+Dataset link:
+https://storage.googleapis.com/ml_take_home/data_sample.tgz
+
+Dataset description:
+
+end_song_sample.csv
+ms_played -- the amount of time the user listened to this track, in milliseconds
+context -- the UI context the track was played from (e.g. playlist or artist page)
+track_id -- the random UUID for the track
+product -- the product status (e.g. free or paid)
+end_timestamp -- the Epoch timestamp that marks the end of the listen
+user_id -- the anonymous, random UUID of the user
+user_data_sample.csv
+gender -- the gender of the user (male or female)
+age_range -- a bucketed age of the user
+country -- the country where the user registered
+acct_age_weeks -- the age of the user's account in weeks as of Oct 14th, 2015
+user_id -- the anonymous, random UUID of the user
+Note:
+This take-home is not timed, but please don't spend more than a few hours on it. Having fancy, polished results is not as important as being able to discuss the limitations of what you've done, how you can validate your results, and further directions you could go in.
+Provide code to reproduce everything from the assignment; we will be reviewing this code with you should you make it to the next stages.Please download the dataset here, which contains a sample of anonymized user listening data in Spotify (from the first half of October, 2015). We'd like you to use this data first to do a warm-up exercise, then to perform an open-ended exploration. Please use any tool you're comfortable with, and package the results of your exploration into a document (the document can be a presentation, a pdf, a google doc, an IPython or R notebook -- whatever you like).
+
+We'd like you to use this data to either make some insights into user behavior, suggest some product changes, or a combination. You can do this any way you like (as long as your results are clearly written up and make sense), but here are some suggestions:
+
+Warm-up (please do this first):
+Determine whether male and female listeners are significantly different in their overall listening (in terms of the count of track listens, or in terms of the total time spent listening)
+
+Analysis suggestion 1: 
+Break the user listening into sessions (exactly what is a listening session is up to you to define)
+Look for correlations between user demographic features (or their behavior) and their overall listening, or their average session lengths
+Analysis suggestion 2:
+Find a clustering of user categories that delineates some interesting or useful behavior traits (or show that no clustering makes sense)
+Dataset link:
+https://storage.googleapis.com/ml_take_home/data_sample.tgz
+
+Dataset description:
+
+end_song_sample.csv
+ms_played -- the amount of time the user listened to this track, in milliseconds
+context -- the UI context the track was played from (e.g. playlist or artist page)
+track_id -- the random UUID for the track
+product -- the product status (e.g. free or paid)
+end_timestamp -- the Epoch timestamp that marks the end of the listen
+user_id -- the anonymous, random UUID of the user
+user_data_sample.csv
+gender -- the gender of the user (male or female)
+age_range -- a bucketed age of the user
+country -- the country where the user registered
+acct_age_weeks -- the age of the user's account in weeks as of Oct 14th, 2015
+user_id -- the anonymous, random UUID of the user
+Note:
+This take-home is not timed, but please don't spend more than a few hours on it. Having fancy, polished results is not as important as being able to discuss the limitations of what you've done, how you can validate your results, and further directions you could go in.
+Provide code to reproduce everything from the assignment; we will be reviewing this code with you should you make it to the next stages.
