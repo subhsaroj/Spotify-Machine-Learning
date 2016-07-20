@@ -1,0 +1,45 @@
+import csv
+import string
+import random
+#programme to count number of male, female or unkown and time consumed by them. 
+def get_file_path1(filename):
+    file_path1 = r"C:\my python work\user_data_sample.csv"
+    print (file_path1)
+    return file_path1
+path1 = get_file_path1("user_data_sample.csv")
+def get_file_path2(filename):
+    file_path2 = r"C:\my python work\end_song_sample.csv"
+    print (file_path2)
+    return file_path2
+path2 = get_file_path2("end_song_sample.csv")
+userid_male = []
+time_consumed = []
+count = 0
+sum1 = 0
+def read_csv(filepath1, filepath2):
+    with open(filepath1, 'rU') as csvfile1, open(filepath2, 'rU') as csvfile2:
+        reader1 = csv.reader(csvfile1)
+        reader2 = csv.reader(csvfile2)
+        next(csvfile1)
+        next(csvfile2)
+        for row in reader1:
+            for field in row:
+                if field== "female":
+                    userid_male.append(row[4])
+        no_of_female = len(userid_male)
+        print(no_of_female)
+        #print(userid_male)
+        #userid_male = set(userid_male)
+        for row in reader2:
+            if any(r in row for r in userid_male):
+                time_consumed.append(row[0])
+                #print(time_consumed)
+        
+        print("comparison done")
+read_csv(path1, path2)        
+for i in range(0,len(time_consumed)):
+    time_consumed[i]=int(time_consumed[i])
+for element in time_consumed:
+    sum1+=element
+print(sum1)
+            
