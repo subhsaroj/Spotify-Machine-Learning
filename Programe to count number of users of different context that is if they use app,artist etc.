@@ -1,0 +1,31 @@
+import os
+import csv
+import random
+import string
+
+
+#Programe to count number of users of different context that is if they use app,artist etc. .
+def get_file_path(filename):
+    file_path = r"C:\my python work\end_song_sample.csv"
+    print (file_path)
+    return file_path
+Data = []
+    
+
+
+path = get_file_path("end_song_sample.csv")
+def read_csv(filepath):
+    with open(filepath, 'rU') as csvfile:
+        
+        reader = csv.reader(csvfile)
+        for row in reader:
+            for field in row:
+                if field == "search": # we can put any product and will get the no. of users.
+                    Data.append(row[5])# row[5] is userid's
+        b = set(Data)# this will give unique user id's
+        
+        
+        print(len(b))
+            
+            
+read_csv(path)
