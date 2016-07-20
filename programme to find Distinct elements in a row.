@@ -1,0 +1,26 @@
+import os
+import csv
+import random
+import string
+
+#programme to find Distinct elements in a row.
+
+def get_file_path(filename):
+    file_path = r"C:\my python work\user_data_sample.csv" # can add another path for another csv file
+    print (file_path)
+    return file_path
+Data = []
+    
+
+
+path = get_file_path("user_data_sample.csv")
+def read_csv(filepath):
+    with open(filepath, 'rU') as csvfile:
+        reader = csv.reader(csvfile)
+        next(csvfile)
+        for row in reader:
+             Data.append(row[1])# we can see different rows to get different values.
+        b = set(Data)
+        print(b)
+
+read_csv(path)
