@@ -1,0 +1,59 @@
+import os
+import csv
+import random
+import string
+
+#programme to get total time consumed by everyone.
+
+def get_file_path(filename):
+    file_path = r"C:\my python work\end_song_sample.csv"
+    print (file_path)
+    return file_path
+Data = []
+sum1 = 0
+    
+path = get_file_path("end_song_sample.csv")
+def read_csv(filepath):
+    with open(filepath, 'rU') as csvfile:
+        reader = csv.reader(csvfile)
+        next(csvfile)
+        for row in reader:
+            Data.append(row[0])
+            
+    
+read_csv(path)
+print("okay")
+for i in range(0,len(Data)): #to change string type to integer
+    Data[i]=int(Data[i])
+for element in Data:
+    sum1+=element
+print(sum1)import os
+import csv
+import random
+import string
+
+#programme to get total time consumed by everyone.
+
+def get_file_path(filename):
+    file_path = r"C:\my python work\end_song_sample.csv"
+    print (file_path)
+    return file_path
+Data = []
+sum1 = 0
+    
+path = get_file_path("end_song_sample.csv")
+def read_csv(filepath):
+    with open(filepath, 'rU') as csvfile:
+        reader = csv.reader(csvfile)
+        next(csvfile)
+        for row in reader:
+            Data.append(row[0])
+            
+    
+read_csv(path)
+print("okay")
+for i in range(0,len(Data)): #to change string type to integer
+    Data[i]=int(Data[i])
+for element in Data:
+    sum1+=element
+print(sum1)
